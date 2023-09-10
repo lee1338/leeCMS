@@ -1,0 +1,35 @@
+#staff-page .staff-container {
+    min-height: 100%;
+}
+
+#staff-page .staff-section {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  background: var(--ion-color-primary);
+  color: #fff;
+}
+
+#staff-page .staff-section ion-thumbnail {
+  min-width: 100px;
+  --size: 200px;
+  --border-radius: 6px;
+}
+
+#staff-page .cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+
+@media screen and (max-width: 1340px) {
+  #staff-page .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  #staff-page .cards {
+    grid-template-columns: 1fr;
+  }
+}

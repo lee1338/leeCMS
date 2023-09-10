@@ -1,0 +1,12 @@
+#main-content {
+  height: 100vh;
+}
+
+#main-content form {
+  display: flex;
+  flex-direction: column;
+}
+
+#news-modal form > *{
+  margin-top: 10px;
+}

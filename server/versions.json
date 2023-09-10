@@ -1,0 +1,12 @@
+[
+  {
+    "number": "1.0",
+    "desc": "login, register, basic design"
+  }, {
+    "number": "1.01",
+    "desc": "user sessions, logout, auth ticket, version log, loader"
+  }, {
+    "number": "1.02",
+    "desc": "housekeeping base, create edit & delete news"
+  }
+]

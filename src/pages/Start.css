@@ -1,0 +1,45 @@
+#start-page .logo {
+  display: flex;
+  justify-content: flex-start;
+}
+
+#start-page .logo > ion-img {
+  display: flex;
+  width: 100px;
+}
+
+#start-container {
+  height: 40vh;
+  min-height: 400px;
+  background: var(--ion-color-primary);
+}
+
+#start-container .left,
+#start-container .right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#start-container .hotel-bg {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 16px;
+  height: 100%;
+  width: 100%;
+  background-image: url('/assets/hotel.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#start-container ion-card {
+  background: rgba(var(--ion-color-primary-rgb), 0.8);
+}
+
+@media screen and (max-width:720px) {
+  #start-container .hotel-bg {
+    grid-template-columns: 1fr;
+    background-size: cover;
+  }
+}

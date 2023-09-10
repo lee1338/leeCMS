@@ -1,0 +1,26 @@
+#footer-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+  padding-top: 50px;
+  font-size: 12px;
+  text-align: center;
+  color: #fff;
+  background: var(--ion-color-primary);
+  border-top: 1px solid var(--ion-color-light);
+}
+
+#footer-container a {
+  text-decoration: none;
+  color: var(--ion-color-secondary);
+}
+
+
+@media screen and (max-width:720px) {
+  #footer-container {
+    grid-template-columns: 1fr;
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}

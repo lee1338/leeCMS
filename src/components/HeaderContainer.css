@@ -1,0 +1,9 @@
+#header-container .logo {
+  display: flex;
+  justify-content: flex-start;
+}
+
+#header-container .logo > ion-img {
+  display: flex;
+  width: 100px;
+}

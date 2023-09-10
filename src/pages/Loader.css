@@ -1,0 +1,11 @@
+#loader {
+  background: var(--ion-color-primary);
+}
+
+#loader .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}

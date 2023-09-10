@@ -1,0 +1,35 @@
+#scoreboard-page .scoreboard-container {
+    min-height: 100%;
+}
+
+#scoreboard-page .scoreboard-section {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  background: var(--ion-color-primary);
+  color: #fff;
+}
+
+#scoreboard-page .scoreboard-section ion-thumbnail {
+  min-width: 100px;
+  --size: 200px;
+  --border-radius: 6px;
+}
+
+#scoreboard-page .cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+#scoreboard-page ion-list-header img {
+  display: flex;
+  width: 30px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 720px) {
+  #scoreboard-page .cards {
+    grid-template-columns: 1fr;
+  }
+}

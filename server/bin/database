@@ -1,0 +1,33 @@
+#!/usr/bin/env node
+const mysql = require('mysql2');
+const { Sequelize } = require('sequelize');
+const { SQL_HOST, SQL_PORT, SQL_USER, SQL_PASSWORD, SQL_DATABASE } = process.env;
+
+const sequelize = new Sequelize(SQL_DATABASE, SQL_USER, SQL_PASSWORD, {
+  host: SQL_HOST,
+  dialect: 'mysql',
+  logging: console.log,
+});
+
+const test = async () => {
+  try {
+    await sequelize.authenticate();
+    console.log('Connection has been established successfully.');
+  } catch (error) {
+    console.error('Unable to connect to the database:', error);
+  }
+};
+test();
+
+/*const pool = mysql.createPool({
+  host: SQL_HOST,
+  port: SQL_PORT,
+  user: SQL_USER,
+  password : SQL_PASSWORD,
+  database : SQL_DATABASE,
+  waitForConnections: true,
+  connectionLimit: 10,
+  queueLimit: 0,
+});*/
+
+module.exports = sequelize;

@@ -1,0 +1,29 @@
+#register-page .logo {
+  display: flex;
+  justify-content: flex-start;
+}
+
+#register-page .logo > ion-img {
+  display: flex;
+  width: 100px;
+}
+
+#register-page ion-content {
+  --background: var(--ion-color-primary);
+}
+
+#register-page ion-card.container {
+  max-width: 450px;
+  margin: auto;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+#register-page form .hidden {
+  display: none;
+}
+
+#register-page ion-button,
+#register-page ion-input {
+  margin-top: 10px;
+}

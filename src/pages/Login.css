@@ -1,0 +1,29 @@
+#login-page .logo {
+  display: flex;
+  justify-content: flex-start;
+}
+
+#login-page .logo > ion-img {
+  display: flex;
+  width: 100px;
+}
+
+#login-page ion-content {
+  --background: var(--ion-color-primary);
+}
+
+#login-page ion-card.container {
+  max-width: 400px;
+  margin: auto;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+#login-page form .hidden {
+  display: none;
+}
+
+#login-page form ion-button,
+#login-page form ion-input {
+  margin-top: 10px;
+}

@@ -1,0 +1,40 @@
+#news-container {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+#news-container .title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#news-container .title h2 {
+  text-transform: uppercase;
+  color: var(--ion-color-primary);
+}
+
+#news-container .cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-content: space-between;
+  gap: 16px;
+}
+
+#news-container ion-list,
+#news-container ion-item {
+  background: transparent;
+  --background: transparent;
+}
+
+@media screen and (max-width: 1340px) {
+  #news-container .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  #news-container .cards {
+    grid-template-columns: 1fr;
+  }
+}

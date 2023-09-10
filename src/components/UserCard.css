@@ -1,0 +1,18 @@
+#user-card ion-item {
+  background: transparent;
+  --background: transparent;
+}
+
+#user-card h1 {
+  color: #fff;
+}
+
+#user-card p {
+  color: #fff;
+}
+
+#user-card ion-avatar.user-avatar {
+  width: 80px;
+  height: 80px;
+  background: var(--ion-color-light);
+}
